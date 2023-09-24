@@ -72,7 +72,7 @@ function setup() {
 }
 
     // Music
-    song = new Audio("assets/media/" + Config.Song);
+    song = new Audio("https://sevenlabs.github.io/imp101-proxy/assets/audio/" + Config.Song);
     song.play()
 
     // Categories

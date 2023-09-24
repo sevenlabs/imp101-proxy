@@ -14,27 +14,27 @@ Config.CustomBindText = "F1"; // leave as "" if you don't want the bind text in 
 
 // Staff list
 Config.Staff = [
-    {name: "Nano", description: "Owner", color: "#ff0000", image: "assets/media/staff/nano.jpg"},
-    {name: "Ryan", description: "Developer", color: "#ff0000", image: "assets/media/staff/1.png"},
-    {name: "Jakester", description: "Management", color: "#ff0000", image: "assets/media/staff/jakester.png"},
-    {name: "UnknownGhostGirl", description: "Management", color: "#ff0000", image: "assets/media/staff/ghostgirl.png"},
-    {name: "GlizzyGunther", description: "Admin", color: "#ff0000", image: "assets/media/staff/1.png"},
-    {name: "Kasper", description: "Developer", color: "#ff0000", image: "assets/media/staff/kasper.gif"}
+    {name: "Nano", description: "Owner", color: "#ff0000", image: "https://sevenlabs.github.io/imp101-proxy/assets/img/staff/nano.jpg"},
+    {name: "Ryan", description: "Developer", color: "#ff0000", image: "https://sevenlabs.github.io/imp101-proxy/assets/img/staff/1.png"},
+    {name: "Jakester", description: "Management", color: "#ff0000", image: "https://sevenlabs.github.io/imp101-proxy/assets/img/staff/jakester.png"},
+    {name: "UnknownGhostGirl", description: "Management", color: "#ff0000", image: "https://sevenlabs.github.io/imp101-proxy/assets/img/staff/ghostgirl.png"},
+    {name: "GlizzyGunther", description: "Admin", color: "#ff0000", image: "https://sevenlabs.github.io/imp101-proxy/assets/img/staff/1.png"},
+    {name: "Kasper", description: "Developer", color: "#ff0000", image: "https://sevenlabs.github.io/imp101-proxy/assets/img/staff/kasper.gif"}
 ];
 
 // Mods list
 Config.Mods = [
-    {name: "legion", description: "Legion Summer Theme", color: "#ff0000", image: "assets/media/none.png"},
-    {name: "legionpark", description: "Legion Parking Lot", color: "#ff0000", image: "assets/media/none.png"},
-    {name: "zombies", description: "Zombies 2.0", color: "#ff0000", image: "assets/media/none.png"},
+    {name: "legion", description: "Legion Summer Theme", color: "#ff0000", image: "https://sevenlabs.github.io/imp101-proxy/assets/img/none.png"},
+    {name: "legionpark", description: "Legion Parking Lot", color: "#ff0000", image: "https://sevenlabs.github.io/imp101-proxy/assets/img/none.png"},
+    {name: "zombies", description: "Zombies 2.0", color: "#ff0000", image: "https://sevenlabs.github.io/imp101-proxy/assets/img/none.png"},
 ];
 
 // Categories
 Config.Categories = [
-    {label: "Social Media", default: true},
+    {label: "Social Media", default: false},
     {label: "Staff", default: true},
-    {label: "Mods", default: true}
+    {label: "Mods", default: false}
 ];
 
 // Music
-Config.Song = "song2.mp3";
+Config.Song = "song.mp3";
