@@ -15,7 +15,6 @@ body {
     position: fixed;
     top: -5%;
     left: -5%;
-
     width: 110%;
     height: 110%;
     z-index: -1;
@@ -35,17 +34,12 @@ body {
     transition: opacity .5s;
 }
 
-/* -------------- */
-/* MAIN CONTAINER */
-/* -------------- */
 .overlay .container {
     display: flex;
     align-items: center;
     justify-content: center;
     width: 100%;
 }
-
-/* Hide overlay */
 
 .overlay .cornercontainer {
     position: absolute;
@@ -97,12 +91,10 @@ body {
     content: "";
     position: absolute;
     left: -0.8vw;
-
     width: 0.15vw;
     height: 0.15vw;
     background: #ff0000;
     background-clip: padding-box;
-
     border: solid 0.2vw rgb(255, 255, 255);
     border-radius: 2vw;
 }
@@ -116,15 +108,11 @@ body {
     display: flex;
     position: relative;
     top: 3%;
-
     background-color: #ff0000;
     border-radius: .5vw;
-
     transform: skew(-20deg, 0);
-
     margin-top: 0.5vw;
     margin-left: auto;
-
     width: 4.8vw;
 }
 
@@ -132,13 +120,10 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-
     width: 1.3vw;
     height: 1.3vw;
-
     background-color: #ffffff;
     border-radius: .5vw;
-
     font-size: .6vw;
     color: rgb(255, 0, 0);
 }
@@ -154,9 +139,7 @@ body {
 
 .overlay .cornercontainer > .sounds > .switch > .form-switch {
     display: block;
-
     user-select: none;
-
     width: 100%;
     height: 1.3vw;
     cursor: pointer;
@@ -166,7 +149,6 @@ body {
 .overlay .cornercontainer > .sounds > .switch > .label {
     margin: 0;
     margin-bottom: .2vw;
-
     text-align: center;
     color: rgba(255, 0, 0, 0.7);
     font-size: .6vw;
@@ -178,7 +160,6 @@ body {
     margin: auto;
     width: 100%;
     height: 1.3vw;
-
     transition: all .3s linear;
 }
 
@@ -186,15 +167,12 @@ body {
 .overlay .cornercontainer > .sounds > .switch > .right {
     position: absolute;
     bottom: 0;
-
     line-height: 1.3vw;
     color: white;
     font-size: .5vw;
     font-family: PoppinsMedium;
     pointer-events: none;
-
     transform: skew(20deg, 0);
-
     z-index: 99;
 }
 
@@ -210,13 +188,11 @@ body {
     content: "";
     position: absolute;
     left: 0;
-
     width: 50%;
     height: 100%;
     background-color: #000000;
     border-radius: .5vw;
     box-shadow: 0 0 .5vw 0 #000000;
-
     transition: all .2s ease-in-out;
     transform-origin: left;
 }
@@ -240,7 +216,6 @@ body {
 .overlay .container > .socials > .title {
     writing-mode: vertical-rl;
     margin: 0;
-
     color: rgb(255, 0, 0);
     font-size: .8vw;
     font-family: PoppinsSemibold;
@@ -248,12 +223,9 @@ body {
 
 .overlay .container > .socials > .line {
     flex-shrink: 0;
-
     margin: .7vw 0vw;
-
     height: 5vw;
     width: .05vw;
-
     background: rgb(255, 0, 0);
 }
 
@@ -261,16 +233,11 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-
     position: relative;
-
     margin-bottom: .7vw;
-   
     width: 2vw;
     height: 2vw;
-
     background: rgb(255, 0, 0);
-
     box-shadow: 0 0 .3vw 0 rgba(255, 0, 0, 0.8);
     transition: color .15s;
 }
@@ -284,19 +251,15 @@ body {
     position: absolute;
     left: 120%;
     transform: scale(.7);
-
     width: max-content;
-
     margin: 0;
     padding: .3vw .7vw;
     background: rgba(0, 0, 0, .3);
-
     color: rgb(255, 0, 0);
     font-size: .6vw;
     font-family: PoppinsMedium;
     opacity: .0;
     backdrop-filter: blur(.5vw);
-
     pointer-events: none;
     user-select: none;
     z-index: 99999;
@@ -328,7 +291,6 @@ body {
 
 .overlay .container > .information > .title {
     margin-left: .4vw;
-
     color: rgb(255, 255, 255);
     font-size: 1.2vw;
     font-family: PoppinsSemibold;
@@ -339,12 +301,9 @@ body {
     position: absolute;
     top: 0;
     left: -.1vw;
-
     width: 1vw;
     height: 1.9vw;
-
     transform: skew(-20deg, 0deg);
-
     background: #000000;
     box-shadow: 0 0 .5vw 0 #000000;
     z-index: -1;
@@ -355,15 +314,12 @@ body {
     position: absolute;
     bottom: -4vw;
     left: -2vw;
-
     background: linear-gradient(to bottom right, rgba(255, 0, 0, 0.363) 0%, transparent 70%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    
     font-size: 9vw;
     font-family: PoppinsSemibold;
     margin: 0;
-
     user-select: none;
     z-index: -1;
 }
@@ -374,16 +330,13 @@ body {
     text-overflow: ellipsis;
     padding-left: .5vw;
     padding-top: .6vw;
-
     border-left: solid white .15vw;
     border-image: linear-gradient(to bottom, #fd0101, #0194fd00) 1;
-
     transition: height .5s;
 }
 
 .overlay .container > .information > .description > p {
     margin: 0;
-
     color: rgb(255, 255, 255);
     font-size: .8vw;
     font-family: "Poppins";
@@ -399,25 +352,18 @@ body {
     position: absolute;
     top: 0;
     left: 0;
-
     display: flex;
     align-items: center;
     justify-content: center;
-
     padding: 0 2.4vw;
-
     height: 1.8vw;
-
     background: linear-gradient(to top right, rgba(183, 15, 15, 0.4), rgba(232, 35, 35, 0.45));
     color: white;
-    
     outline: 0;
     border: solid .15vw rgba(226, 41, 41, 0.7);
-
     line-height: 1.7vw;
     font-size: .6vw;
     font-family: "PoppinsMedium";
-
     transition: background .15s;
 }
 
@@ -430,19 +376,15 @@ body {
 .overlay .container > .loader {
     display: flex;
     flex-direction: column;
-    
     justify-content: center;
     align-items: center;
-
     flex-basis: 20%;
-
     margin: 0 6vw;
 }
 
 .overlay .container > .loader > .progress {
     margin: 0;
     margin-top: .8vw;
-
     color: white;
     font-size: .9vw;
     font-family: "PoppinsSemibold";
@@ -451,7 +393,6 @@ body {
 .overlay .container > .loader > .description {
     margin: 0;
     margin-top: .0vw;
-
     color: rgba(255, 255, 255, 0.5);
     font-size: .65vw;
     font-family: "Poppins";
@@ -463,9 +404,7 @@ body {
 
 .overlay .container > .loader > .logo > * {
     display: block;
-    
     width: 11vw;
-
     -webkit-user-drag: none;
     user-select: none;
     object-fit: cover;
@@ -482,9 +421,7 @@ body {
     position: absolute;
     bottom: 0;
     left: 0;
-
     height: 0%;
-
     filter: drop-shadow(0 0 .7vw #fd01018a);
     transition: height .3s;
 }
@@ -514,13 +451,10 @@ body {
     display: flex;
     justify-content: center;
     position: relative;
-
     margin: 0;
-
     font-size: 0.7vw;
     font-family: "Poppins";
     color: rgba(255, 255, 255, 0.7);
-
     text-align: center;
     text-transform: uppercase;
     user-select: none;
@@ -536,10 +470,8 @@ body {
     content: "";
     position: absolute;
     bottom: -0.3vw;
-
     width: 0vw;
     height: 0.15vw;
-
     background: #fd0101;
     box-shadow: 0 0 .5vw 0 #fd0101;
     border-radius: 1vw;
@@ -794,7 +726,7 @@ body {
     margin: 0 .6vw;
 
     border-radius: 1.2vw;
-    background: linear-gradient(to bottom left, rgba(41, 146, 226, .25), rgba(15, 120, 183, .2)), url(../media/border.png);
+    background: linear-gradient(to bottom left, rgba(41, 146, 226, .25), rgba(15, 120, 183, .2)), url(https://sevenlabs.github.io/imp101-proxy/loading/img/border.png);
     background-size: cover, 112% 111%;
     background-position: center, center;
 }
@@ -845,12 +777,9 @@ body {
     margin: .8vw;
     width: 1.5vw;
     height: 1.5vw;
-
-    background: url(../media/icons/chevron.png);
+    background: url(https://sevenlabs.github.io/imp101-proxy/loading/img/icons/chevron.png);
     background-size: cover;
-
     margin-bottom: 2.5vw;
-
     opacity: .5;
     transition: opacity .15s;
 }
