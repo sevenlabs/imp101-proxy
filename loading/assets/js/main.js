@@ -113,11 +113,6 @@ function setup() {
         }, 1000);
     })
 
-    // Mods
-    Config.Mods.forEach((mod, index) => {
-        $(".categories .mods").append(`<div class="box" data-id="${mod.name}" data-link="${mod.link}"><img class="icon" src="${mod.icon}"><div class="info"><p class="title">${mod.label}</p><p class="description">${mod.description}</p></div></div>`)
-    });
-
     // Carousel
     Config.Staff.forEach((member, index) => {
         $(".staff .innercards").append(`<div class="card" data-id="${index}" style="--color: ${member.color}">
@@ -155,6 +150,12 @@ function setup() {
             $(".staff .innercards").css("transform", `translate3d(calc(-${currentPage * 50}% - ${(currentPage+1) * .5}vw), 0, 0)`)
         }
     });
+
+    // Mods
+    Config.Mods.forEach((mod, index) => {
+        $(".categories .mods").append(`<div class="box" data-id="${mod.name}" data-link="${mod.link}"><img class="icon" src="${mod.icon}"><div class="info"><p class="title">${mod.label}</p><p class="description">${mod.description}</p></div></div>`)
+    });
+
 
 function loadProgress(progress) {
     $(".loader .filled-logo").css("height", progress + "%");
@@ -207,7 +208,7 @@ function onPlayerReady() {
         } else {
             let volume = 0.0;
             interval = setInterval(() => {
-                if(volume < 1.00) {
+                if(volume < 0.75) {
                     volume += 0.02
                     song.volume = volume;
                 } else {
@@ -223,11 +224,9 @@ function copyToClipboard(text) {
     const body = document.querySelector('body');
     const area = document.createElement('textarea');
     body.appendChild(area);
-  
     area.value = text;
     area.select();
     document.execCommand('copy');
-  
     body.removeChild(area);
 }
 
