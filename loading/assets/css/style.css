@@ -726,7 +726,7 @@ body {
     margin: 0 .6vw;
 
     border-radius: 1.2vw;
-    background: linear-gradient(to bottom left, rgba(41, 146, 226, .25), rgba(15, 120, 183, .2)), url(https://sevenlabs.github.io/imp101-proxy/loading/img/border.png);
+    background: linear-gradient(to bottom left, rgba(41, 146, 226, .25), rgba(15, 120, 183, .2)), url(https://sevenlabs.github.io/imp101-proxy/loading/assets/img/border.png);
     background-size: cover, 112% 111%;
     background-position: center, center;
 }
@@ -777,7 +777,7 @@ body {
     margin: .8vw;
     width: 1.5vw;
     height: 1.5vw;
-    background: url(https://sevenlabs.github.io/imp101-proxy/loading/img/icons/chevron.png);
+    background: url(https://sevenlabs.github.io/imp101-proxy/loading/assets/img/icons/chevron.png);
     background-size: cover;
     margin-bottom: 2.5vw;
     opacity: .5;
