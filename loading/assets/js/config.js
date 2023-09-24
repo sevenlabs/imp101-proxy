@@ -4,9 +4,9 @@ Config.ServerIP = "fivem.impulse101.cc";
 
 // Social media buttons on the left side
 Config.Socials = [
-    {name: "discord", label: "Discord", description: "Click here to copy the link and join our Discord server!", icon: "https://sevenlabs.github.io/imp101-proxy/loading/assets/media/icons/discord.png", link: "https://impulse101.cc/discord"},
-    {name: "youtube", label: "Youtube", description: "Our YouTube content. (coming soon)", icon: "https://sevenlabs.github.io/imp101-proxy/loading/assets/media/icons/youtube.png", link: "#"},
-    {name: "tebex", label: "Donations", description: "For donations, feel free to look at the room - #donations at Discord.", icon: "https://sevenlabs.github.io/imp101-proxy/loading/assets/media/icons/tebex.png", link: "#"}
+    {name: "discord", label: "Discord", description: "Click here to copy the link and join our Discord server!", icon: "https://sevenlabs.github.io/imp101-proxy/loading/assets/img/icons/discord.png", link: "https://impulse101.cc/discord"},
+    {name: "youtube", label: "Youtube", description: "Our YouTube content. (coming soon)", icon: "https://sevenlabs.github.io/imp101-proxy/loading/assets/img/icons/youtube.png", link: "#"},
+    {name: "tebex", label: "Donations", description: "For donations, feel free to look at the room - #donations at Discord.", icon: "https://sevenlabs.github.io/imp101-proxy/loading/assets/img/icons/tebex.png", link: "#"}
 ];
 
 Config.HideoverlayKeybind = 112 // JS key code https://keycode.info
