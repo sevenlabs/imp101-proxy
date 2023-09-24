@@ -6,7 +6,6 @@ body {
 #cursor {
     position: fixed;
     width: 1.5vw;
-
     z-index: 99999999999;
     pointer-events: none;
     user-select: none;
@@ -26,14 +25,11 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-
     position: fixed;
     top: 0;
     left: 0;
-
     width: 100%;
     height: 100%;
-
     backdrop-filter: blur(.5vw);
     background: radial-gradient(circle at top right, #7100c836, rgba(2, 62, 215, .3));
     transition: opacity .5s;
@@ -46,7 +42,6 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-
     width: 100%;
 }
 
@@ -356,7 +351,7 @@ body {
 }
 
 .overlay .container > .information > .title::after {
-    content: "NC:RP";
+    content: "IMP101";
     position: absolute;
     bottom: -4vw;
     left: -2vw;
