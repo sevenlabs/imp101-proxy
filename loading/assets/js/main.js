@@ -153,7 +153,7 @@ function setup() {
 
     // Mods
     Config.Mods.forEach((mod, index) => {
-        $(".categories .mods").append(`<div class="box" data-id="${mod.name}" data-link="${mod.link}"><img class="icon" src="${mod.image}"><div class="info"><p class="title">${mod.label}</p><p class="description">${mod.description}</p></div></div>`)
+        $(".categories .mods").append(`<div class="box" data-id="${mod.name}"><img class="icon" src="${mod.image}"><div class="info"><p class="title">${mod.name}</p><p class="description">${mod.description}</p></div></div>`)
     });
 
 
