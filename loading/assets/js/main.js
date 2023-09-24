@@ -35,7 +35,6 @@ $(document).keydown(function(e) {
 var song;
 function setup() {
     let currentDate = new Date();
-
     let year = currentDate.getFullYear();
     let month = (currentDate.getMonth() + 1) < 10 ? "0" + (currentDate.getMonth() + 1) : (currentDate.getMonth() + 1);
     let day = currentDate.getDate() < 10 ? "0" + currentDate.getDate() : currentDate.getDate();
@@ -80,10 +79,8 @@ function setup() {
     Config.Categories.forEach((cat, index) => {
         $(".categories .buttons").append(`<p data-category="${index}" class="${cat.default ? "active" : ""}">${cat.label}</p>`)
         if(cat.default) currentCat = index;
-
         $(".categories .carousel > *").css("transform", `translateX(-${currentCat * 100}%)`)
     });
-
     $(".categories .buttons p").on("click", function() {
         $(`.categories .buttons p[data-category="${currentCat}"]`).removeClass("active");
         currentCat = $(this).attr("data-category");
@@ -91,28 +88,23 @@ function setup() {
 
         $(".categories .carousel > *").css("transform", `translateX(-${currentCat * 100}%)`)
     });
-
     // Socials
     Config.Socials.forEach((social, index) => {
         $(".categories .socialmedia").append(`<div class="box" data-id="${social.name}" data-link="${social.link}"><img class="icon" src="${social.icon}"><div class="info"><p class="title">${social.label}</p><p class="description">${social.description}</p></div></div>`)
     });
-
     var copyTimeouts = {};
     $(".categories .socialmedia .box").on("click", function() {
         let id = $(this).data("id")
         let link = $(this).data("link")
         if(copyTimeouts[id]) clearTimeout(copyTimeouts[id]);
-
         window.open(link, '_blank', 'toolbar=0,location=0,menubar=0');
         //copyToClipboard(link)
-
         $(this).addClass("copied");
         copyTimeouts[id] = setTimeout(() => {
             $(this).removeClass("copied")
             copyTimeouts[id] = undefined;
         }, 1000);
     })
-
     // Carousel
     Config.Staff.forEach((member, index) => {
         $(".staff .innercards").append(`<div class="card" data-id="${index}" style="--color: ${member.color}">
@@ -124,14 +116,12 @@ function setup() {
             $(".staff .pages").append(`<div data-id="${index}"></div>`);
         }
         $(`.staff .pages > div[data-id="0"]`).addClass("active")
-
         if(Config.Staff.length < 3) {
             $(".staff .pages").hide();
             $(".staff .previous").hide();
             $(".staff .next").hide();
         }
     })
-
     var currentPage = 0;
     $(".staff .next").on("click", function() {
         if(currentPage < Config.Staff.length - 2) {
@@ -141,7 +131,6 @@ function setup() {
             $(".staff .innercards").css("transform", `translate3d(calc(-${currentPage * 50}% - ${(currentPage+1) * .5}vw), 0, 0)`)
         }
     });
-
     $(".staff .previous").on("click", function() {
         if(currentPage > 0) {
             $(`.staff .pages > div[data-id="${currentPage}"]`).removeClass("active")
@@ -150,12 +139,10 @@ function setup() {
             $(".staff .innercards").css("transform", `translate3d(calc(-${currentPage * 50}% - ${(currentPage+1) * .5}vw), 0, 0)`)
         }
     });
-
     // Mods
     Config.Mods.forEach((mod, index) => {
         $(".categories .mods").append(`<div class="box" data-id="${mod.name}"><img class="icon" src="${mod.image}"><div class="info"><p class="title">${mod.name}</p><p class="description">${mod.description}</p></div></div>`)
     });
-
 
 function loadProgress(progress) {
     $(".loader .filled-logo").css("height", progress + "%");
