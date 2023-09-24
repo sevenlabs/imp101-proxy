@@ -22,6 +22,7 @@ Config.Mods = [
     {name: "legion", description: "Legion Summer Theme", color: "#ff0000", image: "https://sevenlabs.github.io/imp101-proxy/loading/assets/img/none.png"},
     {name: "legionpark", description: "Legion Parking Lot", color: "#ff0000", image: "https://sevenlabs.github.io/imp101-proxy/loading/assets/img/none.png"},
     {name: "zombies", description: "Zombies 2.0", color: "#ff0000", image: "https://sevenlabs.github.io/imp101-proxy/loading/assets/img/none.png"},
+    {name: "teleport", description: "Custom Teleporter", color: "#ff0000", image: "https://sevenlabs.github.io/imp101-proxy/loading/assets/img/none.png"}
 ];
 // Categories
 Config.Categories = [
