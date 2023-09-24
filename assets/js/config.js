@@ -14,7 +14,7 @@ Config.CustomBindText = "F1"; // leave as "" if you don't want the bind text in 
 
 // Staff list
 Config.Staff = [
-    {name: "Nano", description: "Owner", color: "#ff0000", image: "https://sevenlabs.github.io/imp101-proxy/assets/img/staff/nano.jpg"},
+    {name: "Nano", description: "Owner", color: "#ff0000", image: "https://sevenlabs.github.io/imp101-proxy/assets/img/staff/nano.webp"},
     {name: "Ryan", description: "Developer", color: "#ff0000", image: "https://sevenlabs.github.io/imp101-proxy/assets/img/staff/1.png"},
     {name: "Jakester", description: "Management", color: "#ff0000", image: "https://sevenlabs.github.io/imp101-proxy/assets/img/staff/jakester.png"},
     {name: "UnknownGhostGirl", description: "Management", color: "#ff0000", image: "https://sevenlabs.github.io/imp101-proxy/assets/img/staff/ghostgirl.png"},
