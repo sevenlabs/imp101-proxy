@@ -72,8 +72,8 @@ function setup() {
 
     // Music
     song = new Audio("https://sevenlabs.github.io/imp101-proxy/loading/assets/audio/" + Config.Song);
-    song.play()
-    song.volume=0.5;
+    song.play();
+    song.volume=0.35;
 
     // Categories
     var currentCat = "";

@@ -14,7 +14,7 @@ Config.Staff = [
     {name: "Ryan", description: "Developer II", color: "#ff0000", image: "https://sevenlabs.github.io/imp101-proxy/loading/assets/img/staff/ryan.png"},
     {name: "Jakester", description: "Management", color: "#ff0000", image: "https://sevenlabs.github.io/imp101-proxy/loading/assets/img/staff/jakester.png"},
     {name: "UnknownGhostGirl", description: "Community Leader", color: "#ff0000", image: "https://sevenlabs.github.io/imp101-proxy/loading/assets/img/staff/ghostgirl.png"},
-    {name: "GlizzyGunther", description: "Administrator", color: "#ff0000", image: "https://sevenlabs.github.io/imp101-proxy/loading/assets/img/staff/1.png"},
+    {name: "GlizzyGunther", description: "Administrator", color: "#ff0000", image: "https://sevenlabs.github.io/imp101-proxy/loading/assets/img/staff/glizzy.jpg"},
     {name: "Kasper", description: "Developer I", color: "#ff0000", image: "https://sevenlabs.github.io/imp101-proxy/loading/assets/img/staff/kasper.gif"}
 ];
 // Mods list
