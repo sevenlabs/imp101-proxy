@@ -73,6 +73,7 @@ function setup() {
     // Music
     song = new Audio("https://sevenlabs.github.io/imp101-proxy/loading/assets/audio/" + Config.Song);
     song.play()
+    song.volume=0.5;
 
     // Categories
     var currentCat = "";
@@ -189,7 +190,7 @@ function onPlayerReady() {
                     song.volume = volume;
                 } else {
                     clearInterval(interval)
-                    song.volume = .0;
+                    song.volume = 0.0;
                 }
             }, 1);
         } else {
